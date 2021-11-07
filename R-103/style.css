@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .container {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    animation-play-state: paused;
+    animation: move 1s ease-in 2s infinite alternate none running;
+} */
+
+.item1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 109, 204);
+    position: absolute;
+    bottom: 0px;
+    left: 190px;
+    animation: move 1s linear 100ms infinite alternate;
+}
+
+.item2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(238, 214, 0);
+    position: absolute;
+    bottom: 0px;
+    left: 250px;
+    animation: move 1s linear 250ms infinite alternate;
+}
+
+.item3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(243, 36, 0);
+    position: absolute;
+    bottom: 0px;
+    left: 310px;
+    animation: move 1s linear 500ms infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        bottom: 0px;
+    }
+    25% {
+        bottom: 50px;
+    }
+    50% {
+        bottom: 100px;
+    }
+    75% {
+        bottom: 150px;
+    }
+    100% {
+        bottom: 200px;
+    }
+}

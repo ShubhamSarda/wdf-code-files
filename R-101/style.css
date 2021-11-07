@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: rgb(0, 76, 143);
+    /* transition-property: all; */
+    /* transition-delay: 1s; */
+    /* transition-duration: 2s; */
+    /* transition-timing-function: cubic-bezier(.94, .23, .97, .97); */
+    transition: background-color 100ms linear 1s, width 2s ease-in, height 2s ease-in;
+}
+
+div:hover {
+    width: 600px;
+    height: 400px;
+    background-color: rgb(177, 150, 0);
+}

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+.auth {
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    min-width: 28rem;
+    max-width: 32rem
+}
+
+.auth h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 0 2rem 0;
+    border-bottom: 0.1rem solid silver;
+}
+
+.auth form {
+    margin: 1rem;
+}
+
+.auth input {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 0.5rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 1.5px solid rgb(163, 163, 163);
+}
+
+.auth input::placeholder {
+    color: rgb(163, 163, 163);
+}
+
+.auth input:hover {
+    border-bottom: 1.5px solid #0086da;
+}
+
+.auth form p {
+    font-size: 1.3rem;
+    padding: 3rem 0.5rem 0rem 0.5rem;
+    color: rgb(163, 163, 163);
+}
+
+.auth form p:hover {
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+.auth button[type="submit"] {
+    display: block;
+    margin: 2rem auto;
+    font-size: 1.6rem;
+    padding: 0.9rem 2.2rem;
+    border-radius: 1.7rem;
+    border: none;
+    width: 90%;
+    background-color: #0086da;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.auth button[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.auth .register {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.auth .register span {
+    color: #007ecc;
+    font-weight: 600;
+}
+
+.auth .register span:hover {
+    color: #005b94;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+footer img:hover {
+    cursor: pointer;
+}

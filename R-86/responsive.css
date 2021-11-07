@@ -1,0 +1,41 @@
+@media (min-width:1279px) {}
+
+@media (max-width:1279px) {
+    section.banner {
+        background-image: url('./media/bg/main-tablet.svg');
+        background-size: 153%;
+        background-position: right 40% center;
+    }
+    section.banner h1 {
+        font-size: 10rem;
+    }
+}
+
+@media (max-width:768px) {
+    header {
+        height: 6rem;
+    }
+    header .logo img {
+        height: 30px;
+    }
+    header nav.desktop-menu {
+        display: none;
+    }
+    header nav.mobile-menu {
+        display: inline;
+    }
+    section.banner h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width:480px) {
+    section.banner {
+        background-image: url('./media/bg/main-mobile.svg');
+        background-size: 195%;
+        background-position: center top 50%;
+    }
+    section.banner h1 {
+        font-size: 5rem;
+    }
+}

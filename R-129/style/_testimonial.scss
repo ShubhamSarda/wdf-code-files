@@ -1,0 +1,135 @@
+.testimonials {
+  background: $bg-color;
+  padding: 4rem 0;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  margin: 3rem;
+}
+
+.container {
+  width: 95%;
+  max-width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "item1 item1 item2 item3" "item4 item5 item5 item3";
+  gap: 1.5rem;
+}
+
+.items {
+  border-radius: 5px;
+  padding: 1.5rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "image name" "title title" "description description";
+  row-gap: 1.5rem;
+  align-content: start;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    grid-area: image;
+  }
+
+  .name {
+    font-size: 1.6rem;
+    grid: name;
+    align-self: center;
+    padding-left: 1rem + 3rem;
+    font-weight: 600;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    grid-area: title;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 1.6rem;
+    grid-area: description;
+  }
+  .description::before {
+    content: '"';
+  }
+  .description::after {
+    content: '"';
+  }
+}
+
+// %item-properties {
+//   padding: 1rem;
+//   font-size: 15px;
+//   border: 1px solid #181f2c;
+// }
+
+// .item1 {
+//   background: #733fc7 url("./media/quotation.png") no-repeat top 10% right 20px;
+//   background-size: 50px;
+//   grid-area: item1;
+//   @extend %item-properties;
+// }
+
+// .item2 {
+//   background: #49556c;
+//   grid-area: item2;
+//   @extend %item-properties;
+// }
+
+// .item3 {
+//   background: #fefefe;
+//   grid-area: item3;
+//   @extend %item-properties;
+// }
+
+// .item4 {
+//   background: #fefefe;
+//   grid-area: item4;
+//   @extend %item-properties;
+// }
+
+// .item5 {
+//   background: #181f2c;
+//   grid-area: item5;
+//   @extend %item-properties;
+// }
+
+@mixin item-properties($color, $fs: 15px) {
+  padding: 1rem;
+  font-size: $fs;
+  border: 1px solid #181f2c;
+  background: $color;
+}
+
+.item1 {
+  background: url("./media/quotation.png") no-repeat top 10% right 20px;
+  background-size: 50px;
+  grid-area: item1;
+  @include item-properties($color: #733fc7, $fs: 16px);
+}
+
+.item2 {
+  grid-area: item2;
+  @include item-properties($color: #49556c, $fs: 20px);
+}
+
+.item3 {
+  grid-area: item3;
+  @include item-properties($color: #fefefe);
+}
+
+.item4 {
+  grid-area: item4;
+  @include item-properties($color: #fefefe);
+}
+
+.item5 {
+  grid-area: item5;
+  @include item-properties($color: #181f2c);
+}

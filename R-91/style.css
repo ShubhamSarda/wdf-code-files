@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 50vh;
+    font-size: 2rem;
+    color: transparent;
+    border: 10px dotted blue;
+    padding: 5rem;
+    background-color: chartreuse;
+    background-image: url(./media/background.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* background: chartreuse url(./media/background.gif) no-repeat scroll center; */
+}

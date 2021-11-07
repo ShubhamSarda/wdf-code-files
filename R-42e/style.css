@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+button {
+    color: white;
+    background-color: rgb(0, 88, 221);
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0, 88, 221);
+    padding: 0.3rem;
+}
+
+button:hover {
+    background-color: rgb(0, 57, 143);
+    border: 1px solid rgb(0, 57, 143);
+}
+
+input:focus {
+    background-color: rgb(0, 57, 143);
+    color: white;
+}
+
+h3::before {
+    content: "--";
+}
+
+p::first-letter {
+    font-size: 1.2rem;
+}
+
+li:first-child {
+    background-color: aqua;
+}

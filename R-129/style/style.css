@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+.b-t {
+  color: #000000;
+}
+
+.w-t {
+  color: #ffffff;
+}
+
+.h-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonials {
+  background: #ecf2f7;
+  padding: 4rem 0;
+}
+
+.heading h1 {
+  font-size: 3rem;
+  margin: 3rem;
+}
+
+.container {
+  width: 95%;
+  max-width: 1280px;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "item1 item1 item2 item3" "item4 item5 item5 item3";
+  gap: 1.5rem;
+}
+
+.items {
+  border-radius: 5px;
+  padding: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+      grid-template-areas: "image name" "title title" "description description";
+  row-gap: 1.5rem;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.items img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
+}
+
+.items .name {
+  font-size: 1.6rem;
+  grid: name;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 4rem;
+  font-weight: 600;
+}
+
+.items .title {
+  font-size: 1.8rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  font-weight: 600;
+}
+
+.items .description {
+  font-size: 1.6rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: description;
+}
+
+.items .description::before {
+  content: '"';
+}
+
+.items .description::after {
+  content: '"';
+}
+
+.item1 {
+  background: url("./media/quotation.png") no-repeat top 10% right 20px;
+  background-size: 50px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: item1;
+  padding: 1rem;
+  font-size: 16px;
+  border: 1px solid #181f2c;
+  background: #733fc7;
+}
+
+.item2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: item2;
+  padding: 1rem;
+  font-size: 20px;
+  border: 1px solid #181f2c;
+  background: #49556c;
+}
+
+.item3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: item3;
+  padding: 1rem;
+  font-size: 15px;
+  border: 1px solid #181f2c;
+  background: #fefefe;
+}
+
+.item4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: item4;
+  padding: 1rem;
+  font-size: 15px;
+  border: 1px solid #181f2c;
+  background: #fefefe;
+}
+
+.item5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: item5;
+  padding: 1rem;
+  font-size: 15px;
+  border: 1px solid #181f2c;
+  background: #181f2c;
+}
+
+footer .logo {
+  margin: 20px 0 20px 0;
+}
+
+footer .logo h1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "item1 item1 item2" "item4 item5 item5" "item3 item3 item3";
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "item1" "item2" "item3" "item4" "item5";
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+.parent {
+    background-color: #0074d9;
+    height: 50rem;
+    margin: 1.3rem;
+}
+
+.child-one {
+    background-color: #85006c;
+    width: 2rem;
+    height: 2rem;
+}
+
+.child-two {
+    background-color: #006446;
+    width: 5rem;
+    height: 5rem;
+}
+
+.child-three {
+    background-color: #b3b600;
+    width: 5rem;
+    height: 5rem;
+}

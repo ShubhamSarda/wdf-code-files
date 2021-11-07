@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #2d3748;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1280px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.d-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.d-menu ul li {
+    padding: 2rem 2rem;
+    color: #5c6069;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #0081EB;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.btn:hover {
+    background-color: #0062B3;
+    transition: all 0.2s ease-in;
+}
+
+.intro-section {
+    display: flex;
+    margin: 7rem auto;
+}
+
+.intro-text {
+    max-width: 50%;
+}
+
+.float-bg {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    z-index: -1;
+    animation: bounce 4s ease 0.5s infinite alternate;
+}
+
+.introduction .tag-line {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: #0081EB;
+}
+
+.introduction .main-line {
+    font-weight: 700;
+    color: #2d3748;
+    font-size: 4.6rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.highlight::before {
+    content: "";
+    width: 315px;
+    height: 20%;
+    background-color: #1da1f2;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.introduction .description {
+    font-size: 1.8rem;
+    color: #718096;
+    margin-bottom: 4rem;
+}
+
+.intro-images {
+    position: relative;
+    width: 50%;
+    text-align: center;
+}
+
+.float-bl {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    animation: bounce 2s ease 0.5s infinite alternate, slide-right 0.5s ease 0s 1 alternate;
+}
+
+.float-tr {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    animation: bounce 2.1s ease 0.5s infinite alternate, slide-left 0.5s ease 0s 1 alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

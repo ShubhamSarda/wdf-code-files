@@ -1,0 +1,29 @@
+@media (max-width:480px) {
+    img.mobile {
+        border: 5px solid blue;
+    }
+    p {
+        font-size: 0.8rem;
+        background-color: burlywood;
+    }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+    img.tablet {
+        border: 5px solid blue;
+    }
+    p {
+        font-size: 1rem;
+        background-color: aqua;
+    }
+}
+
+@media (min-width:769px) and (max-width:1279px) {
+    img.desktop {
+        border: 5px solid blue;
+    }
+    p {
+        font-size: 1.5rem;
+        background-color: aquamarine;
+    }
+}

@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 300px;
+    height: 400px;
+    margin: 70px;
+    color: #ffffff;
+    border: 50px solid rgb(0, 89, 172);
+    background-color: rgb(0, 89, 172);
+    /* border-top: 100px solid transparent; */
+    /* border-bottom: 100px solid transparent;
+    border-left: 100px solid rgb(134, 132, 0);
+    border-right: 100px solid rgb(134, 132, 0); */
+    /* border-top-left-radius: 50px; */
+    /* border-radius: 20px 50px; */
+    /* border-radius: 20% / 50%; */
+    /* border-radius: 30% 70% 29% 71% / 30% 69% 31% 70%; */
+}
